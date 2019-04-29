@@ -32,8 +32,8 @@
 	function fushebochang(){
 	    	let temperature2 = document.getElementById('temperature2').value
 	   		if (!isNaN(temperature2)) {
-	   			temperature2 = Number(temperature3) + 273;
-	   			var bochang2 = 2898/2;
+				temperature2 = Number(temperature2) + 273;
+	   			var bochang2 = 2898/temperature2;
 	   			document.getElementById('area2').value = bochang2;
 	   		} else {
 	            alert("请输入正确的数字");
